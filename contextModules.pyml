@@ -1,0 +1,19 @@
+# Thisis the YAML description of the contextModules used by the diSimplex
+# project.
+
+# This "project" describes a local (ConTeXt) texmf which already has the
+# required modules installed.
+
+# To do this we *only* need the entries shown below.
+
+projects:
+  contextModules:
+    description: The collection of ConTeXt modules used in the diSimplex projects
+
+    targets:
+      module:
+        help: Our local collection of (locally) pre-installed ConTeXt modules
+        worker: context
+        install:
+          dir: texmf
+          manualUpdate: True
